@@ -1,0 +1,32 @@
+{
+  "_readme": "Maps your Google Sheet column headers to the canonical columns. Header matching ignores case and punctuation. Edit the alias lists to match your sheet; `npm run load:finance -- --dry-run` tells you what is missing.",
+  "fiscal_year_start_month": 1,
+  "transactions": {
+    "file": "inbox/finance/transactions.csv",
+    "columns": {
+      "txn_date": ["Date", "Transaction Date", "Posted"],
+      "category": ["Category", "Account", "GL Account"],
+      "vendor": ["Vendor", "Payee", "Paid To"],
+      "description": ["Description", "Memo", "Notes"],
+      "amount": ["Amount", "Total"],
+      "kind": ["Type", "Income/Expense"],
+      "fund": ["Fund"]
+    },
+    "amount_sign": "expenses_positive",
+    "kind_values": {
+      "expense": ["expense", "debit", "payment", "check", "withdrawal"],
+      "income": ["income", "credit", "deposit", "assessment", "revenue"]
+    },
+    "default_fund": "operating"
+  },
+  "budget": {
+    "file": "inbox/finance/budget.csv",
+    "columns": {
+      "fiscal_year": ["Year", "Fiscal Year", "FY"],
+      "category": ["Category", "Account", "GL Account"],
+      "fund": ["Fund"],
+      "budgeted_amount": ["Budget", "Budgeted", "Budget Amount", "Amount"]
+    },
+    "default_fund": "operating"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "_readme": "Replace these EXAMPLE questions with real ones about your HOA documents. expect_doc_type is where the answer should come from. Include 1-2 questions your documents do NOT answer to calibrate MAX_DISTANCE.",
+  "cases": [
+    { "query": "What is the process for approving an exterior change to my home?", "expect_doc_type": "rules" },
+    { "query": "How are special assessments approved?", "expect_doc_type": "bylaws" },
+    { "query": "When does the landscaping contract renew and how do we cancel?", "expect_doc_type": "contract" },
+    { "query": "What did the board decide about the pool last year?", "expect_doc_type": "minutes", "filters": { "doc_type": "minutes" } },
+    { "query": "What is the recipe for sourdough bread?", "note": "Out of scope on purpose: use its distance to calibrate MAX_DISTANCE" }
+  ]
+}

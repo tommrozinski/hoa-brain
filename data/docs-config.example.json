@@ -1,0 +1,10 @@
+{
+  "_readme": "Copy to inbox/docs-config.json (gitignored). Each key is a case-insensitive piece of a FILE NAME. Matching documents are flagged: every search result from them carries a verify warning, and Claude can show you the original page image with view_document_page. mode 'warn' (default) returns the printed text WITH the warning; 'pointer-only' withholds the text and only points to the document and pages.",
+  "files": {
+    "cornerstone": {
+      "title": "CornerStone Management Agreement (with handwritten notes)",
+      "verify": "The original has handwritten annotations that text extraction cannot read; printed terms may have been changed by hand.",
+      "mode": "warn"
+    }
+  }
+}

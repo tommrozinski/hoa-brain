@@ -1,0 +1,4 @@
+# One name, address or unit per line (min 3 chars). Replaced with [REDACTED] before anything is embedded or stored.
+# Copy this file to inbox/redaction-terms.txt (that path is gitignored).
+Jane Doe
+123 Example Court
