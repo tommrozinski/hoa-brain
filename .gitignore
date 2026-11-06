@@ -1,0 +1,14 @@
+node_modules/
+build/
+cdk.out/
+.env
+*.log
+.DS_Store
+
+# Your private data never goes to git
+inbox/**
+!inbox/**/
+!inbox/**/.gitkeep
+
+# Local session notes (contain account details)
+.claude/
